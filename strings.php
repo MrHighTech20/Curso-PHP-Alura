@@ -1,9 +1,13 @@
 <?php
  //Manipulando String
 
-$idade = 20;
-$nome = 'Marcos';
+ $idade = 20;
 
-echo "Olá mundo ! Me chamo $nome ". PHP_EOL;
+echo "Olá mundo!" . PHP_EOL;
+echo "Eu tenho \"$idade\" anos";
 
-echo "Eu tenho $idade anos de idade";
+echo PHP_EOL;
+
+echo "Você só pode entrar, se tiver mais de 18 anos\n";
+
+echo "Você tem $idade anos. Pode entrar";
