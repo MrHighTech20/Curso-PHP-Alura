@@ -1,7 +1,7 @@
 <?php
 
-$iadeList = [21, 23, 19, 25, 30, 41, 18];
+$idadeList = [21, 23, 19, 25, 30, 41, 18, 35];
 
-for ($i = 0; $i < 7; $i ++) {
+for ($i = 0; $i < count($idadeList); $i ++) {
     echo $idadeList[$i] . PHP_EOL;
 }
