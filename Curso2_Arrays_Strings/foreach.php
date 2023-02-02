@@ -26,6 +26,6 @@ $contasCorrentes[] = [
 ];
 
 foreach ($contasCorrentes as $cpf => $conta){
-    echo $cpf . " " . ['titular'] . PHP_EOL;
+    echo $cpf . " " . $conta['titular'] . PHP_EOL;
 }
 
