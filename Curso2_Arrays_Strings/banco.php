@@ -1,5 +1,10 @@
 <?php
 
+function exibeMensagem($mensagem){
+    echo $mensagem . PHP_EOL;
+}
+
+
 $contasCorrentes = [
     '123.456.789-10' => [
         'titular' => 'Maria', 
@@ -15,14 +20,20 @@ $contasCorrentes = [
     ]
 ];
 
-$contasCorrentes['123.456.789-10']['saldo'] -= 500;
+if (500 > $contasCorrentes['123.456.789-10']['saldo']) {
+    //exibeMensagem(mensagem:"Você não pode sacar esse valor");
+} else {
+    $contasCorrentes['123.456.489-11']['saldo'] -= 500;
+}
 
 if (500 > $contasCorrentes['123.456.489-11']['saldo']) {
-    echo "Você não pode sacar esse valor" . PHP_EOL;
+    //exibeMensagem(mensagem:"Você não pode sacar esse valor");
 } else {
     $contasCorrentes['123.456.489-11']['saldo'] -= 500;
 }
 
 foreach ($contasCorrentes as $cpf => $conta){
-    echo $cpf . " " . $conta['titular'] . ' ' . $conta['saldo'] .PHP_EOL;
+    //exibeMensagem(mensagem:$cpf . " " . $conta['titular'] . ' ' . $conta['saldo']);
 }
+
+//Erro nas linhas comentadas acima, não entendi o motivo do erro
