@@ -32,8 +32,10 @@ $contasCorrentes['123.256.789-12'] = depositar(
     900
 );
 
+titularDois($contasCorrentes['123.256.789-12']);
+
 foreach ($contasCorrentes as $cpf => $conta) {
     exibeMensagem(
-        "$cpf {$conta['titular']} {$conta['titular']}"
+        "$cpf {$conta['titular']} {$conta['saldo']}"
     );
 }

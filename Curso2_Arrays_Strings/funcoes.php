@@ -25,3 +25,8 @@ function depositar(array $conta, float $valorADepositar): array
     }
     return $conta;
 }
+
+function titularDois(array &$conta)
+{
+    $conta ['titular'] = strtoupper($conta['titular']);
+}
