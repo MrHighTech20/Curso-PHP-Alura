@@ -42,9 +42,9 @@ unset($contasCorrentes['123.456.689-11']);
 //Função para transformar o nome desse CPF em maiúscula
 titularDois($contasCorrentes['123.256.789-12']);
 
+echo "<ul>";
+
 foreach ($contasCorrentes as $cpf => $conta) {
-    ['titular' => $titular, 'saldo' => $saldo] = $conta;
-    exibeMensagem(
-        "$cpf $titular $saldo"
-    );
+    exibeConta($conta);
 }
+echo "</ul>";
